@@ -47,6 +47,7 @@
     "build": "webpack",
     "start": "node server.js",
     "prebuild": "rimraf dist",
-    "prestart": "npm-run-all build"
+    "prestart": "npm-run-all build",
+    "clean": "rm -fr node_modules"
   }
 }

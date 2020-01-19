@@ -5,8 +5,8 @@
   "main": "index.js",
   "license": "MIT",
   "workspaces": [
-    "my-button",
-    "react-app"
+    "components/*",
+    "apps/*"
   ],
   "devDependencies": {
     "@storybook/react": "^5.3.6"
@@ -15,7 +15,8 @@
     "core-js": "^2.6.11"
   },
   "scripts": {
-    "reactapp:dev": "yarn workspaces reactapp run dev",
+    "dev:reactapp": "yarn workspaces reactapp run dev",
+    "mono:clean": "rm -fr node_modules && yarn workspaces run clean",
     "story": "start-storybook -p 5555"
   }
 
