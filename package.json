@@ -15,7 +15,8 @@
     "core-js": "^2.6.11"
   },
   "scripts": {
-    "dev:reactapp": "yarn workspaces reactapp run dev",
+    "dev:reactapp": "yarn workspace my-react-app run dev",
+    "dev:nextjsapp": "yarn workspace my-nextjs-app run dev",
     "mono:clean": "rm -fr node_modules && yarn workspaces run clean",
     "story": "start-storybook -p 5555"
   }
