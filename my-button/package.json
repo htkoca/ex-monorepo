@@ -1,0 +1,12 @@
+{
+  "name": "my-button",
+  "version": "1.0.0",
+  "main": "index.js",
+  "license": "MIT",
+  "peerDependencies": {
+    "react": "^16.12.0"
+  },
+  "dependencies": {
+    "styled-components": "^5.0.0"
+  }
+}

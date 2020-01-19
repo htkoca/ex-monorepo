@@ -1,0 +1,22 @@
+{
+  "name": "practice-ws",
+  "version": "1.0.0",
+  "private": true,
+  "main": "index.js",
+  "license": "MIT",
+  "workspaces": [
+    "my-button",
+    "react-app"
+  ],
+  "devDependencies": {
+    "@storybook/react": "^5.3.6"
+  },
+  "dependencies": {
+    "core-js": "^2.6.11"
+  },
+  "scripts": {
+    "reactapp:dev": "yarn workspaces reactapp run dev",
+    "story": "start-storybook -p 5555"
+  }
+
+}
