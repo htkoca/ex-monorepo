@@ -1,5 +1,5 @@
 {
-  "name": "my-button",
+  "name": "ui--my-button",
   "version": "1.0.0",
   "module": "src/index.js",
   "license": "MIT",

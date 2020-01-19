@@ -1,5 +1,5 @@
 {
-  "name": "practice-ws",
+  "name": "root",
   "version": "1.0.0",
   "private": true,
   "main": "index.js",
@@ -9,16 +9,18 @@
     "apps/*"
   ],
   "devDependencies": {
-    "@storybook/react": "^5.3.6"
+    "@storybook/react": "^5.3.6",
+    "lerna": "^3.20.2"
   },
   "dependencies": {
+    "babel-loader": "^8.0.6",
     "core-js": "^2.6.11"
   },
   "scripts": {
-    "dev:reactapp": "yarn workspace my-react-app run dev",
-    "dev:nextjsapp": "yarn workspace my-nextjs-app run dev",
-    "mono:clean": "rm -fr node_modules && yarn workspaces run clean",
+    "bootstrap": "lerna bootstrap --use-workspaces",
+    "dev:reactapp": "yarn workspace app--my-react-app run dev",
+    "dev:nextjsapp": "yarn workspace app--my-nextjs-app run dev",
+    "mono:clean": "rm -fr node_modules && lerna clean",
     "story": "start-storybook -p 5555"
   }
-
 }

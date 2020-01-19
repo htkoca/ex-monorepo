@@ -1,4 +1,4 @@
-import MyButton from 'my-button'
+import MyButton from 'ui--my-button'
 
 function HomePage() {
   return (

@@ -1,12 +1,12 @@
 {
-  "name": "my-nextjs-app",
+  "name": "app--my-nextjs-app",
   "version": "1.0.0",
   "private": true,
   "main": "index.js",
   "license": "MIT",
   "dependencies": {
-    "my-button": "1.0.0",
-    "next": "^9.2.0"
+    "next": "^9.2.0",
+    "ui--my-button": "*"
   },
   "scripts": {
     "dev": "next",

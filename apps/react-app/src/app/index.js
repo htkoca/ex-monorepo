@@ -1,7 +1,7 @@
 import React from 'react';
 import img from './react.png';
 import s from './style.module.less';
-import MyButton from 'my-button';
+import MyButton from 'ui--my-button';
 
 import FontTest from 'font-test/';
 const App = () => (
