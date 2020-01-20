@@ -7,8 +7,8 @@
   yarn dev:nextjsapp  // run another app in dev mode
 
 
-                                  monorepo
-
+                               [MONOREPO]
+                                  │
 Applications folder --------->    ├── apps
   application consuming           │   ├── nextjs-app
   shared library                  │   │   ├── package.json
