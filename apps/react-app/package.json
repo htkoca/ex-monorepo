@@ -40,7 +40,8 @@
     "react-dom": "^16.12.0",
     "react-loadable": "^5.5.0",
     "regenerator-runtime": "^0.13.3",
-    "ui--my-button": "*"
+    "ui--my-button": "*",
+    "util--get-message": "*"
   },
   "scripts": {
     "dev": "webpack-dev-server --progress --env.mode=\"development\"",

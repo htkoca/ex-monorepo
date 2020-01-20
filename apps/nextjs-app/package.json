@@ -6,7 +6,8 @@
   "license": "MIT",
   "dependencies": {
     "next": "^9.2.0",
-    "ui--my-button": "*"
+    "ui--my-button": "*",
+    "util--get-message": "*"
   },
   "scripts": {
     "dev": "next",

@@ -6,7 +6,8 @@
   "license": "MIT",
   "workspaces": [
     "components/*",
-    "apps/*"
+    "apps/*",
+    "utils/*"
   ],
   "devDependencies": {
     "@storybook/react": "^5.3.6",
