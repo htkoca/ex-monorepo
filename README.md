@@ -12,30 +12,27 @@
 Applications folder --------->    ├── apps
   application consuming           │   ├── nextjs-app
   shared library                  │   │   ├── package.json
-                                  │   │   └── pages
+                                  │   │   └── pages/
                                   │   │ 
                                   │   └── react-app
                                   │       ├── README.md
                                   │       ├── babel.config.js
                                   │       ├── package.json
                                   │       ├── server.js
-                                  │       ├── src
+                                  │       ├── src/
                                   │       ├── webpack.config.js
                                   │       └── yarn.lock
                                   │
 shared components folder ---->    ├── components
                                   │   └── my-button
                                   │       ├── package.json
-                                  │       ├── src
-                                  │       │   ├── index.js
-                                  │       │   └── index.stories.js
+                                  │       ├── src/
                                   │       └── yarn.lock
                                   │
 share utilitys folder ------->    ├── utils
                                   │   └── get-message
                                   │       ├── package.json
-                                  │       └── src
-                                  │           └── index.js
+                                  │       └── src/
                                   │
                                   ├── lerna.json
                                   ├── package.json
