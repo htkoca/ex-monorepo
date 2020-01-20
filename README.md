@@ -29,7 +29,7 @@ shared components folder ---->    ├── components
                                   │       ├── src/
                                   │       └── yarn.lock
                                   │
-share utilitys folder ------->    ├── utils
+shared utility folder ------->    ├── utils
                                   │   └── get-message
                                   │       ├── package.json
                                   │       └── src/
