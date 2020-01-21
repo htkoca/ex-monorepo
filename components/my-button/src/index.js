@@ -1,6 +1,7 @@
+import React from 'react'
 import styled from 'styled-components';
 
-const Button = styled.button`
+const StyledButton = styled.button`
     background: red;
     color: #fff;
     border-radius: 4px;
@@ -10,4 +11,9 @@ const Button = styled.button`
     padding: 9px 36px;
 `;
 
+const Button = ({children}) => <div>
+  <StyledButton>
+    {children}
+  </StyledButton>
+ </div>
 export default Button;

@@ -6,6 +6,7 @@
   "license": "MIT",
   "dependencies": {
     "next": "^9.2.0",
+    "next-transpile-modules": "^3.0.0",
     "ui--my-button": "*",
     "util--get-message": "*"
   },
