@@ -11,7 +11,7 @@
     "util--get-message": "*"
   },
   "scripts": {
-    "dev": "next",
+    "dev": "next -p 7777",
     "build": "next build",
     "start": "next start",
     "clean": "rm -fr node_modules"
