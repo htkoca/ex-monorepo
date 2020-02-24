@@ -15,7 +15,6 @@
     "dev": "next -p 7777",
     "build": "next build",
     "build:clean": "rimraf dist",
-    "start": "next start",
-    "clean": "rm -fr node_modules"
+    "start": "next start"
   }
 }
