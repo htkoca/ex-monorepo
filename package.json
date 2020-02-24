@@ -28,12 +28,15 @@
     "mono:clean": "rm -fr node_modules && lerna clean",
     "build:ui": "lerna --scope=@myscope/ui--* exec --parallel -- babel --root-mode upward src -d lib --ignore **/*.story.js,**/*.test.js",
     "build:util": "lerna --scope=@myscope/util--* exec --parallel -- babel --root-mode upward src -d lib --ignore **/*.story.js,**/*.test.js",
-    "build:cleanAll": "yarn workspaces run build:clean && lerna --scope=@myscope/app--* exec --parallel -- rm -fr lib",
+    "build:cleanAll": "yarn workspaces run build:clean",
     "dev:reactapp": "yarn workspace @myscope/app--my-react-app run dev",
     "build:reactapp": "yarn workspace @myscope/app--my-react-app run build",
     "serve:reactapp": "yarn workspace @myscope/app--my-react-app run start",
     "dev:nextjsapp": "yarn workspace @myscope/app--my-nextjs-app run dev",
     "build:nextjsapp": "yarn workspace @myscope/app--my-react-app run build",
+    "dev:nodeapp": "yarn workspace @myscope/app--node-app run dev",
+    "build:nodeapp": "yarn workspace @myscope/app--node-app run build",
+    "serve:nodeapp": "yarn workspace @myscope/app--node-app run start",
     "story": "start-storybook -p 5555"
   }
 }
