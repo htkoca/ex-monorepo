@@ -1,0 +1,36 @@
+{
+  "name": "@myscope/node-app",
+  "version": "1.0.0",
+  "main": "index.ts",
+  "license": "MIT",
+  "engines": {
+    "node": "12"
+  },
+  "devDependencies": {
+    "@babel/cli": "^7.8.4",
+    "@babel/core": "^7.8.4",
+    "@babel/node": "^7.8.4",
+    "@babel/plugin-proposal-class-properties": "^7.8.3",
+    "@babel/plugin-proposal-decorators": "^7.8.3",
+    "@babel/preset-env": "^7.8.4",
+    "@babel/preset-typescript": "^7.8.3",
+    "@types/node": "^13.7.4",
+    "@typescript-eslint/eslint-plugin": "^2.20.0",
+    "@typescript-eslint/parser": "^2.20.0",
+    "eslint": "^6.8.0",
+    "nodemon": "^2.0.2",
+    "typescript": "^3.8.2"
+  },
+  "dependencies": {
+    "core-js": "2.6.11",
+    "regenerator-runtime": "^0.13.3"
+  },
+  "scripts": {
+    "lint": "eslint --config .eslintrc.js \"src/**/*@(.js|.ts)\"",
+    "build": "babel src -d dist --extensions '.ts,.js' --ignore **/*.test.js",
+    "build:clean": "rimraf dist",
+    "tsc": "tsc --skipLibCheck",
+    "tsc:w": "tsc --skipLibCheck -w",
+    "dev": "nodemon --exec babel-node --extensions '.ts,.js' src/index.ts"
+  }
+}
