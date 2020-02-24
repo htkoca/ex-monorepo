@@ -33,7 +33,7 @@
     "build:clean": "rimraf dist",
     "tsc": "tsc --skipLibCheck",
     "tsc:w": "tsc --skipLibCheck -w",
-    "dev": "nodemon --exec babel-node --extensions '.ts,.js' src/index.ts",
+    "dev": "nodemon --watch src --ext 'js,ts' --exec  babel-node --extensions '.ts,.js' src/index.ts",
     "start": "node dist/index.js"
   }
 }
