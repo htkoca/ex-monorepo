@@ -1,6 +1,9 @@
 {
-  "name": "util--get-message",
+  "name": "@myscope/util--get-message",
   "version": "1.0.0",
   "module": "src/index.js",
-  "license": "MIT"
+  "license": "MIT",
+  "scripts": {
+    "build:clean": "rm -fr ./lib"
+  }
 }

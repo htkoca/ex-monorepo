@@ -2,6 +2,9 @@
 
 module.exports = (api) => {
   api.cache(true)
+
+  console.log('xxxx apps/react-app babel.config.js')
+
   const presets = [
     [
       '@babel/preset-env',

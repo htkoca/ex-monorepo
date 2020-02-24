@@ -1,11 +1,13 @@
-import MyButton from 'ui--my-button'
-import message from 'util--get-message'
+import MyButton from '@myscope/ui--button'
+import MyButtonBlue from '@myscope/ui--button-blue'
+import message from '@myscope/util--get-message'
 
 function HomePage() {
   return (
     <>
       <div>Welcome sto Next.js!</div>
       <div><MyButton>{message()}</MyButton> </div>
+      <div><MyButtonBlue>{message()}</MyButtonBlue> </div>
     </>
   )
 }

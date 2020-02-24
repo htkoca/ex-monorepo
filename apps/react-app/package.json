@@ -1,5 +1,5 @@
 {
-  "name": "app--my-react-app",
+  "name": "@myscope/app--my-react-app",
   "version": "1.0.0",
   "private": true,
   "main": "index.js",
@@ -34,20 +34,23 @@
     "webpack-dev-server": "^3.10.1"
   },
   "dependencies": {
+    "@myscope/ui--button": "*",
+    "@myscope/ui--button-blue": "1.0.0",
     "core-js": "2.6.10",
     "express": "^4.17.1",
     "react": "^16.12.0",
     "react-dom": "^16.12.0",
     "react-loadable": "^5.5.0",
     "regenerator-runtime": "^0.13.3",
-    "ui--my-button": "*",
-    "util--get-message": "*"
+    "@myscope/util--get-message": "*",
+    "styled-components": "^5.0.1"
   },
   "scripts": {
     "dev": "webpack-dev-server --progress --env.mode=\"development\"",
     "build": "webpack",
+    "build:clean": "rimraf dist",
     "start": "node server.js",
-    "prebuild": "rimraf dist",
+    "prebuild": "yarn build:clean",
     "prestart": "npm-run-all build",
     "clean": "rm -fr node_modules"
   }
