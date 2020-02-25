@@ -1,6 +1,8 @@
 module.exports = (api) => {
   api.cache(true)
 
+  console.log('xxx node-app babel.config.js')
+
   const presets = [
     [
       '@babel/preset-env',
@@ -19,8 +21,8 @@ module.exports = (api) => {
   ]
 
   const plugins = [
-    ["@babel/plugin-proposal-decorators", { "legacy": true }],
-    ["@babel/plugin-proposal-class-properties", { "loose": true }]
+    ['@babel/plugin-proposal-decorators', { 'legacy': true }],
+    ['@babel/plugin-proposal-class-properties', { 'loose': true }]
   ].filter(Boolean)
 
   return {

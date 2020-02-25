@@ -1,7 +1,12 @@
+.vscode
 node_modules
 dist
-*.log
 lib
+coverage
+*.log
 .jest-*
 .DS_Store
+
+__gitignore/
+*__gitignore
 

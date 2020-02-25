@@ -1,5 +1,4 @@
-import configuration from '../jest-setup-check-configuration.js';
-const styleMock = require(`${configuration().testFolderPath}/style-mock.js`);
+import styleMock from './style-mock.js'
 
 import importedCssFilefrom from './handling-css-file.js';
 
